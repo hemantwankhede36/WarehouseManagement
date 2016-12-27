@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<?php
+if(isset($_POST['add'])){
+	echo "add pressed";
+?>
+<html>
+<head>
+<title>PHP insertion</title>
+<link href="css/add.css" rel="stylesheet">
+</head>
+<body>
+	<center>
+<div class="maindiv">
+<!--HTML Form -->
+<div class="form_div">
+<div class="title">
+<h2>Enter your details</h2>
+</div>
+<form action="add2.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+<h2>Form</h2>
+<label>UID:</label>
+<input class="input" name="uid" type="text" value="uid">
+<label>First Name:</label>
+<input class="input" name="firstName" type="text" value="firstName">
+<label>Last Name:</label>
+<input class="input" name="lastName" type="text" value="lastName">
+<label>Village:</label>
+<input class="input" name="village" type="text" value="village"><br>
+<input class="submit" name="submit" type="submit" value="submit">
+</form>
+</div>
+</div>
+</center>
+</body>
+</html>

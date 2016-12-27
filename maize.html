@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<?php
+if(isset($_POST['add'])){
+	echo "add pressed";
+?>
+<html>
+<head>
+<title>PHP insertion</title>
+<link href="css/add.css" rel="stylesheet">
+</head>
+<body>
+	<center>
+<div class="maindiv">
+<div class="form_div">
+<div class="title">
+<h2>Enter your details</h2>
+</div>
+<form action="maize.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+<h2>Form</h2>
+<label>Entry ID:</label>
+<input class="input" name="entryId" type="text" value="">
+<label>UID:</label>
+<input class="input" name="uid" type="text" value="">
+<label>Date:</label>
+<input class="input" name="date" type="text" value="">
+<label>No. of Sacks:</label>
+<input class="input" name="sackNo" type="text" value="">
+<label>Block:</label>
+<input class="input" name="block" type="text" value=""><br>
+<input class="submit" name="submit" type="submit" value="submit">
+</form>
+</div>
+</div>
+</center>
+</body>
+</html>
